@@ -1,0 +1,12 @@
+<div class="login-container">
+  <form class="form-signin" [formGroup]="formLogin">
+    <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+    <label class="sr-only" for="username">Username</label>
+    <input class="form-control" id="username" autofocus="" required="" type="text" placeholder="Username" formControlName="username">
+    <span *ngIf="isSubmitted && formLogin.controls.username.errors">Mandatory field</span>
+    <label class="sr-only" for="inputPassword">Password</label>
+    <input class="form-control" id="inputPassword" required="" type="password" placeholder="Password" formControlName="password">
+    <span *ngIf="isSubmitted && formLogin.controls.password.errors">Mandatory field</span>
+    <button class="btn btn-lg btn-primary btn-block" type="submit" (click)="onSubmit(formLogin.value)">Sign in</button>
+  </form>
+</div>

@@ -1,0 +1,4 @@
+1. Run npm install;
+2. Run ```npm run api``` (am folost json-server pentru mock backend);
+3. Run npm start;
+4. Pentru login username:test, password: test;
